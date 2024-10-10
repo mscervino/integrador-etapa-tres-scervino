@@ -1,0 +1,38 @@
+.footer {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Centrar texto */
+  padding: 20px 0; /* Espaciado interno */
+  margin-top: 30px; /* Margen superior de 30px */
+  margin-bottom: 30px; /* Margen inferior de 30px */
+
+  &__content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+    padding: 0 20px; /* Espaciado lateral para que no quede pegado a los bordes */
+  }
+
+  p {
+    margin: 0 0 10px 0; /* Eliminar márgenes superiores e inferiores, salvo 10px entre párrafos */
+  }
+
+  .footer__copyright {
+    font-weight: bold; /* Negrita para copyright */
+    margin-bottom: 10px; /* Separación inferior */
+  }
+
+  .footer__address,
+  .footer__phone {
+    font-size: 0.95rem; /* Tamaño de fuente ligeramente mayor */
+  }
+
+  @media (max-width: 768px) {
+    /* Ajustes para pantallas más pequeñas */
+    font-size: 0.8rem;
+
+    .footer__address,
+    .footer__phone {
+      font-size: 0.85rem; /* Disminuir tamaño de fuente en pantallas pequeñas */
+    }
+  }
+}
