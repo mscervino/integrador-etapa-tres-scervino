@@ -17,7 +17,9 @@ Adjunto este mensaje y la foto del VSC, igual le pase a Maxi por Discord el prob
 ![alt text](<Captura de pantalla 2024-10-06 a la(s) 6.00.08 p. m..png>)
 
 # Voy hacer un nuevo repositorio.
-# git remote add origin https://github.com/mscervino/integrador-tercera-etapa-scervino.git
+# git remote add origin https://github.com/integrador-etapa-tres-scervino
 
+
+## NETLIFY: https://brilliant-treacle-1d82f3.netlify.app
 
 
