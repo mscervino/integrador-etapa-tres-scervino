@@ -31,8 +31,7 @@ const ProductosProvider = ( { children} ) => {
     const crearProductoContext = async (nuevoProducto) => {
 
         try {
-            // console.log(nuevoProducto)
-
+            
             const options = {
                 method: 'POST',
                 headers: { 'content-type' : 'application/json' },
@@ -52,7 +51,7 @@ const ProductosProvider = ( { children} ) => {
     }
 
     const actualizarProductoContext = async (productoEditado) => {
-        // console.log(productoEditado)
+        
         try {
 
             const options = {
@@ -61,7 +60,7 @@ const ProductosProvider = ( { children} ) => {
                 body: JSON.stringify(productoEditado)
             }
 
-            const urlEdicion = url + productoEditado.id // http://local.../productos/9
+            const urlEdicion = url + productoEditado.id 
 
             const editedProduct = await helperPeticionesHttp(urlEdicion, options)
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useTitulo from "../hooks/useTitulo";
-import './Contacto.scss'; // Asegúrate de crear este archivo para los estilos
+import './Contacto.scss'; 
 
 const Contacto = () => {
   useTitulo('Contacto');
@@ -20,7 +20,7 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Formulario enviado:', formData);
-    // Aquí puedes agregar lógica para enviar los datos del formulario
+    
   };
 
   return (
