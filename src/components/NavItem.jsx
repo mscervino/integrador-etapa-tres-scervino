@@ -4,8 +4,8 @@ import './NavItem.scss';
 
 const NavItem = ({item}) => {
   return (
-    <li className="nav-item"> {/* Cambié a "nav-item" */}
-      <NavLink to={item.ruta} className="nav-item__link"> {/* Cambié a "nav-item__link" */}
+    <li className="nav-item"> {}
+      <NavLink to={item.ruta} className="nav-item__link"> {}
         {item.nombre}
       </NavLink>
     </li>

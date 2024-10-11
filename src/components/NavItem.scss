@@ -2,21 +2,21 @@
   list-style: none;
 
   &__link {
-    color: white; /* Texto blanco */
+    color: white; 
     text-decoration: none;
-    background-color: #007bff; /* Fondo azul */
+    background-color: #007bff; 
     padding: 10px 15px;
     display: block;
-    border-radius: 5px; /* Borde redondeado */
+    border-radius: 5px; 
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: #0056b3; /* Fondo más oscuro al pasar el cursor */
+      background-color: #0056b3; 
     }
   }
 
   @media (max-width: 576px) {
-    display: inline-block; /* Los items estarán en una fila horizontal */
-    margin-right: 15px; /* Margen entre los ítems */
+    display: inline-block; 
+    margin-right: 15px; 
   }
 }

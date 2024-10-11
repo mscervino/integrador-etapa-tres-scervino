@@ -1,58 +1,58 @@
 .nav-bar {
-  background-color: #007bff; /* Color de fondo azul */
-  padding: 10px 20px; /* Espaciado interno de la barra de navegación */
-  display: flex; /* Usar flexbox para alinear elementos */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+  background-color: #007bff; 
+  padding: 10px 20px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   
   @media (max-width: 576px) {
     display: none;
 
-    /* Si el menú está abierto, lo mostramos */
+    
     &.is-open {
       display: flex;
     }
   }
 
-  /* En pantallas grandes, el menú siempre es visible */
+  
   @media (min-width: 577px) {
     display: flex;
   }
 }
 
 .nav-bar__nav-list {
-  list-style-type: none; /* Elimina los puntos de la lista */
-  padding: 0; /* Elimina el padding de la lista */
-  margin: 0; /* Elimina el margen de la lista */
-  display: flex; /* Usar flexbox para alinear los elementos de la lista */
-  gap: 20px; /* Espacio entre los elementos de la lista */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  gap: 20px; 
 }
 
 .nav-bar__nav-list li {
-  margin: 0; /* Elimina el margen de los elementos de la lista */
+  margin: 0; 
 }
 
 .nav-bar__nav-list a {
-  color: white; /* Color del texto */
-  text-decoration: none; /* Elimina el subrayado */
-  padding: 10px 15px; /* Espaciado interno de los enlaces */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s; /* Transición suave para el fondo */
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  transition: background-color 0.3s; 
 }
 
 .nav-bar__nav-list a:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Color de fondo al pasar el cursor */
+  background-color: rgba(255, 255, 255, 0.2); 
 }
 
-/* Responsividad */
+
 @media (max-width: 576px) {
   .nav-bar {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column; 
+    align-items: flex-start; 
   }
 
   .nav-bar__nav-list {
-    flex-direction: column; /* Cambia a columna para la lista */
-    gap: 10px; /* Espacio reducido entre elementos */
+    flex-direction: column; 
+    gap: 10px; 
   }
 }

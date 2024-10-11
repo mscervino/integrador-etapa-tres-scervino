@@ -95,19 +95,19 @@
             height: 200px;
         }
 
-        &__article { /* .card__article */
+        &__article { 
             display: flex;
         }
 
-        &__image-container { /* .card .card__image-container */
+        &__image-container { 
             width: 120%;
-            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); /* Estado inicial */
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); 
         }
 
         &:hover &__image-container,
         &:focus &__image-container {
             width: 120%;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
         }
 
     }

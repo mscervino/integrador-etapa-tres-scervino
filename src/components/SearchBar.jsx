@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import './SearchBar.scss'; 
-import logo from '/img/logo-integrador-3.webp';  // Ruta de la imagen del logo
-import carrito from '/img/carrito.webp';  // Ruta de la imagen del carrito
+import logo from '/img/logo-integrador-3.webp';  
+import carrito from '/img/carrito.webp'; 
 import menu from '/img/menu-icon.webp';
 
 const SearchBar = ({onMenuToggle}) => {

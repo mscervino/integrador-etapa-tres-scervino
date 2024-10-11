@@ -1,4 +1,4 @@
-import './Footer.scss'; // Asegúrate de importar el archivo de estilos
+import './Footer.scss'; 
 
 const Footer = () => {
   return (
