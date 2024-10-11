@@ -76,13 +76,34 @@ const ProductosProvider = ( { children} ) => {
 
     }
 
+    const borrarProductoContext = async (id) => {
+        try {
+            const options = {
+                method: 'DELETE',
+                headers: { 'content-type' : 'application/json' },
+            }
+            
+            const urlBorrado = url + id
+            const deletedProduct = await helperPeticionesHttp(urlBorrado, options)
+            
+            if(deletedProduct){
+                const nuevosProductos = productos.filter(producto => producto.id !== id)
+                setProductos(nuevosProductos)
+            }
+
+        } catch (error) {
+            console.error('[borrarProductoContext]', error)
+        }
+    }
+
 
     const data = {
         productos,
         crearProductoContext,
         actualizarProductoContext,
         productoAEditar,
-        setProductoAEditar
+        setProductoAEditar,
+        borrarProductoContext
     }
 
     return <ProductosContext.Provider value={data}>{ children }</ProductosContext.Provider>

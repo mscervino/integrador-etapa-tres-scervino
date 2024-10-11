@@ -4,6 +4,20 @@
   display: flex; /* Usar flexbox para alinear elementos */
   justify-content: center; /* Centra horizontalmente el contenido */
   align-items: center; /* Centra verticalmente el contenido */
+  
+  @media (max-width: 576px) {
+    display: none;
+
+    /* Si el menú está abierto, lo mostramos */
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  /* En pantallas grandes, el menú siempre es visible */
+  @media (min-width: 577px) {
+    display: flex;
+  }
 }
 
 .nav-bar__nav-list {
@@ -36,7 +50,7 @@
     flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     align-items: flex-start; /* Alinea los elementos a la izquierda */
   }
-  
+
   .nav-bar__nav-list {
     flex-direction: column; /* Cambia a columna para la lista */
     gap: 10px; /* Espacio reducido entre elementos */

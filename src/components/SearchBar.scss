@@ -2,14 +2,13 @@
   display: flex;
   justify-content: space-between; /* Espacio entre logo y carrito */
   align-items: center; /* Centra verticalmente los elementos */
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #d3d3d3; /* Fondo gris de la barra de búsqueda */
-  height: 60px; /* Ajusta la altura de la barra de búsqueda */
+  height: 80px; /* Ajusta la altura de la barra de búsqueda */
 
   &__logo-container {
     flex: 0 0 auto; /* Permite que el contenedor del logo no se expanda */
-    height: 100%;
-    width: 10%;
+    height: 60px;
     display: flex;
     align-items: center;
 
@@ -24,65 +23,70 @@
     flex: 1; /* Permite que la barra de búsqueda ocupe el espacio restante */
     display: flex; /* Asegura que el contenido del formulario esté en línea */
     align-items: center; /* Centra verticalmente el contenido del formulario */
+    flex-direction: row;
+    box-shadow: none;
+    border: none;
+  }
 
-    &-label {
-      margin-right: 10px; /* Espacio entre la etiqueta y el input */
-      flex-shrink: 0; /* Evita que el label se encoja */
-      line-height: 1.5; /* Alinea verticalmente el texto del label */
-    }
-
-    &-search {
-      padding: 5px; /* Padding interno del input */
-      width: 100%; /* Ocupa todo el ancho disponible */
-      max-width: 300px; /* Ancho máximo del input */
-      border: 1px solid #ccc; /* Borde del input */
-      border-radius: 4px 0 0 4px; /* Bordes redondeados */
-    }
-
-    &-submit {
-      padding: 5px 10px; /* Padding interno del botón */
+  &__form-submit{
+    padding: 5px 10px; /* Padding interno del botón */
       background-color: #007bff; /* Color de fondo del botón */
       color: white; /* Color del texto del botón */
       border: none; /* Sin borde */
       border-radius: 0 4px 4px 0; /* Bordes redondeados */
       cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-      margin-left: -1px; /* Alinear el botón al input sin margen */
-    }
+  }
+
+  &__form-label {
+    margin-right: 10px; /* Espacio entre la etiqueta y el input */
+    flex-shrink: 0; /* Evita que el label se encoja */
+    line-height: 1.5; /* Alinea verticalmente el texto del label */
+  }
+
+  &__form-search {
+    padding: 5px; /* Padding interno del input */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Ancho máximo del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 4px 0 0 4px; /* Bordes redondeados */
   }
 
   &__carrito-container {
     flex: 0 0 auto; /* Permite que el contenedor del carrito no se expanda */
-    height: 0%;
-    width: 15%;
     display: flex;
+    height: 50%;
     align-items: center;
 
     img {
-      height: 50%; /* Ajustamos la altura al 100% del contenedor */
-      width: 50%;
+      height: 40px; /* Ajustar el tamaño del ícono de menú */
+      width: 40px;
       object-fit: contain;
       cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
     }
+
+    @media (min-width: 577px) { /* Cambiado a 768px para consistencia */
+      margin-right: 8px;
+    }
   }
 
-  .menu-toogle {
+  .menu-toggle {
     display: none; /* Ocultar el menú en pantallas grandes */
-
-    @media (max-width: 576px) {
-      display: block; /* Mostrar el menú en pantallas pequeñas */
+  
+    @media (max-width: 576px) { /* Cambiado a 768px para consistencia */
+      display: flex; /* Mostrar el menú en pantallas pequeñas */
+      align-items: center;
+      height: 50%;
+      cursor: pointer;
     }
-
-    &__label {
-      cursor: pointer; /* Cambia el cursor al pasar sobre el label */
+  
+    button {
+      background-color: transparent;
+      border: none; /* Evitar bordes en el botón */
     }
-
-    &__top-bread,
-    &__meat,
-    &__bottom-bread {
-      width: 25px; /* Ancho de los elementos del menú */
-      height: 3px; /* Alto de los elementos del menú */
-      background-color: #333; /* Color de los elementos del menú */
-      margin: 0.1px 0; /* Margen vertical entre elementos */
+  
+    img {
+      height: 40px; /* Ajustar el tamaño del ícono de menú */
+      width: 40px;
     }
-  }
+  }  
 }

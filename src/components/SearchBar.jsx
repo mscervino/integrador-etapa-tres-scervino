@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 import './SearchBar.scss'; 
 import logo from '/img/logo-integrador-3.webp';  // Ruta de la imagen del logo
 import carrito from '/img/carrito.webp';  // Ruta de la imagen del carrito
+import menu from '/img/menu-icon.webp';
 
-const SearchBar = () => {
+const SearchBar = ({onMenuToggle}) => {
   return (
     <div className="search-bar">
       <div className="search-bar__logo-container">
@@ -27,12 +28,10 @@ const SearchBar = () => {
           <img src={carrito} alt="Carrito de compras" />
         </Link>
       </div>
-      <div className="menu-toogle">
-        <label htmlFor="menu" className="menu-toogle__label">
-          <span className="menu-toogle__top-bread"></span>
-          <span className="menu-toogle__meat"></span>
-          <span className="menu-toogle__bottom-bread"></span>
-        </label>
+      <div className="menu-toggle">
+        <button onClick={onMenuToggle}>
+          <img src={menu} alt="menu" />
+        </button>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-## Marcelo Gustavo Scervino-985452
+## 
 
 ## Repositori GIT
 # me cncontre que si bien venia haciendo los commit y me figura el log de todos los commit que hice el repositorio dice vacio. ([core]

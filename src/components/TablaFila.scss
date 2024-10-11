@@ -5,7 +5,7 @@
 // Contenedor para los botones
 .button-container {
   display: flex; // Usa flexbox para alinear los botones en una fila
-  gap: 15px; // Espacio de 15px entre los botones
+  gap: 8px; // Espacio de 15px entre los botones
 
   button {
     padding: 8px 12px; // Ajusta el padding del botón
@@ -34,7 +34,6 @@
 
     button {
       width: 100%; // Los botones ocuparán todo el ancho disponible
-      margin-bottom: 15px; // Añade margen inferior de 15px para separación
     }
 
     button:last-child {
